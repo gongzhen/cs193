@@ -10,9 +10,26 @@
 
 @implementation PlayingCard
 
-
 @synthesize suit = _suit;
 
+- (int) match : (NSArray *) otherCards
+{
+    int score = 0;
+    if ([otherCards count] == 1) {
+        PlayingCard *otherCard = [otherCards firstObject];
+        if ([self.suit isEqualToString:otherCard.suit]) {
+            score = 1;
+        } else if (self.rank == otherCard.rank) {
+            score = 4;
+        }
+    }
+    
+    return score;
+}
+
+
+// getContents method inherited from parent class Card
+// overwrite the method contents
 - (NSString* ) contents
 {
     // PlayingCard and slef can be switched?
@@ -22,12 +39,13 @@
     return [ rankStrings [self.rank] stringByAppendingString:self.suit ];
 }
 
+// @property (strong, nonatomic) NSString *suit
+// void setSuite(NSString suit)
 - (void) setSuit:(NSString *)suit
 {
     if ([[PlayingCard validSuites ] containsObject: suit] ) {
         _suit = suit;
     }
-    
 }
 
 - (NSString* ) suit
@@ -42,21 +60,25 @@
     }
 }
 
+// public methods
+
+// NSArray* validSuites() return NSArray;
 + (NSArray *) validSuites
 {
     return @[@"♠", @"♣", @"♥", @"♦"];
 }
 
+// NSArray* rankingStrings(); return NSArray;
 + (NSArray *) rankingStrings
 {
     // @ make a string object
     return @[@"?", @"A", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"J",@"Q",@"K"];
 }
 
+// NSUInteger maxRank() return NSUInteger
 + (NSUInteger) maxRank
 {
-    return [[self rankingStrings] count ]-1;
+    return [[self rankingStrings] count ] - 1;
 }
 
- 
 @end

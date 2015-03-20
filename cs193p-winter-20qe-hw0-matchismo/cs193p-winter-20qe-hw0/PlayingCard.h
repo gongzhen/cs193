@@ -8,10 +8,10 @@
 
 #import "Card.h"
 
+// inherited from Card class
 @interface PlayingCard : Card
 
 @property (strong, nonatomic) NSString *suit;
-
 @property (nonatomic) NSUInteger rank;
 
 - (void) setRank:(NSUInteger)rank;
