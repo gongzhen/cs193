@@ -16,16 +16,15 @@
 - (instancetype) init
 {
     self = [super init];
+    // test what object of self is.
     
     if (self) {
-        
         for (NSString *suit in [PlayingCard validSuites]) {
             for (NSUInteger rank = 1; rank < [PlayingCard maxRank]; rank++) {
-                
                 PlayingCard *card = [[PlayingCard alloc] init];
                 card.rank = rank;
                 card.suit = suit;
-                [self addCard:card];
+                [self addCard:card];            
             }
         }
     }
@@ -33,7 +32,7 @@
     // init alawys return itself.
     // return instancetype of itself.
     return self;
-
 }
 
 @end
+

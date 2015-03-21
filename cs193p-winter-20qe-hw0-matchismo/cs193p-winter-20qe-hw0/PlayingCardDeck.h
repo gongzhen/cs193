@@ -8,6 +8,7 @@
 
 #import "Deck.h"
 
+// Inherited from Deck class
 @interface PlayingCardDeck : Deck
 
 @end
