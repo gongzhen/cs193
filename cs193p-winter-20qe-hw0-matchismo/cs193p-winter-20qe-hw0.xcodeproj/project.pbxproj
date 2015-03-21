@@ -18,6 +18,7 @@
 		062EB5D41A6B488000E71C11 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 062EB5D31A6B488000E71C11 /* Images.xcassets */; };
 		062EB5D71A6B488000E71C11 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 062EB5D51A6B488000E71C11 /* LaunchScreen.xib */; };
 		062EB5E31A6B488000E71C11 /* cs193p_winter_20qe_hw0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 062EB5E21A6B488000E71C11 /* cs193p_winter_20qe_hw0Tests.m */; };
+		065E271E1AACDBEE00C183A9 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 065E271D1AACDBEE00C183A9 /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,8 @@
 		062EB5DC1A6B488000E71C11 /* cs193p-winter-20qe-hw0Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cs193p-winter-20qe-hw0Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		062EB5E11A6B488000E71C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		062EB5E21A6B488000E71C11 /* cs193p_winter_20qe_hw0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cs193p_winter_20qe_hw0Tests.m; sourceTree = "<group>"; };
+		065E271D1AACDBEE00C183A9 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = Model/CardMatchingGame.m; sourceTree = "<group>"; };
+		065E27201AACDF9500C183A9 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = Model/CardMatchingGame.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +138,11 @@
 		065A65DD1A73900500F4C3F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				06178A861A6BAA7400BC6D63 /* PlayingCard.m */,
 				06178A891A6C2CAA00BC6D63 /* PlayingCardDeck.m */,
 				06178A881A6C2C8C00BC6D63 /* PlayingCardDeck.h */,
+				065E271D1AACDBEE00C183A9 /* CardMatchingGame.m */,
+				065E27201AACDF9500C183A9 /* CardMatchingGame.h */,
+				06178A861A6BAA7400BC6D63 /* PlayingCard.m */,
 				06178A851A6BAA5E00BC6D63 /* PlayingCard.h */,
 				06178A831A6B8BDA00BC6D63 /* Deck.m */,
 				06178A821A6B8BA400BC6D63 /* Deck.h */,
@@ -251,6 +256,7 @@
 				06178A841A6B8BDA00BC6D63 /* Deck.m in Sources */,
 				062EB5CF1A6B488000E71C11 /* ViewController.m in Sources */,
 				062EB5CC1A6B488000E71C11 /* AppDelegate.m in Sources */,
+				065E271E1AACDBEE00C183A9 /* CardMatchingGame.m in Sources */,
 				06178A8A1A6C2CAA00BC6D63 /* PlayingCardDeck.m in Sources */,
 				062EB5C91A6B488000E71C11 /* main.m in Sources */,
 				06178A811A6B6D5C00BC6D63 /* Card.m in Sources */,

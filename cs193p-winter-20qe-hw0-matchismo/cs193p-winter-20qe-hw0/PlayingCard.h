@@ -8,6 +8,7 @@
 
 #import "Card.h"
 
+// inherited from Card class
 @interface PlayingCard : Card
 
 /* Property */

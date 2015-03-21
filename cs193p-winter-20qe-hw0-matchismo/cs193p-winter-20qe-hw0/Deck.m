@@ -9,7 +9,6 @@
 #import "Deck.h"
 
 @interface Deck()
-
 // semi-private property cards known as an anonymous category or class extension.
 // it is only visible within the scope of Deck.m.
 @property (strong, nonatomic) NSMutableArray* cards;
@@ -18,14 +17,16 @@
 /* Implemetation for Deck */
 @implementation Deck
 
+// NSMUtableArray* getCards() return _cards;
 - (NSMutableArray* ) cards
 {
     if (!_cards) {
         _cards = [[NSMutableArray alloc] init];
     }
+    
+    NSLog(@"_cards: %@\n", _cards);
     return _cards;
 }
-
 
 - (void) addCard:(Card *)card atTop:(BOOL)atTop
 {
@@ -47,7 +48,7 @@
     Card* randomCard = nil;
     
     if ( [self.cards count]) {
-        unsigned index = arc4random() % [self.cards count];
+        unsigned index = arc4random() % [self.cards count];        
         randomCard = self.cards[index];
         [self.cards removeObjectAtIndex: index];
     }

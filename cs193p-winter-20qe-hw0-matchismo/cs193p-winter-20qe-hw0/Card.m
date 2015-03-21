@@ -14,6 +14,9 @@
 
 @implementation Card
 
+
+// bool isChosen() return _chosen;
+// bool isMatched() return _matched;
 @synthesize chosen = _chosen;
 @synthesize matched = _matched;
 
