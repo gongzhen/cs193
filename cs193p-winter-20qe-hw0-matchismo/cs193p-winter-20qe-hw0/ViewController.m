@@ -55,7 +55,7 @@
     NSLog(@"Flips update to %d\n", self.flipCount);
 }
 
-
+/* sender function build the connection between controller and button UI. */
 - (IBAction) touchCardButton:(UIButton *)sender
 {
     NSLog(@"sender currentTitle: %@\n", sender.currentTitle);
