@@ -52,7 +52,6 @@
 {
     _flipCount = flipCount;
     self.flipsLabel.text = [NSString stringWithFormat:@"FLips : %d", self.flipCount];
-    NSLog(@"Flips update to %d\n", self.flipCount);
 }
 
 /* sender function build the connection between controller and button UI. */

@@ -23,8 +23,6 @@
     if (!_cards) {
         _cards = [[NSMutableArray alloc] init];
     }
-    
-    NSLog(@"_cards: %@\n", _cards);
     return _cards;
 }
 

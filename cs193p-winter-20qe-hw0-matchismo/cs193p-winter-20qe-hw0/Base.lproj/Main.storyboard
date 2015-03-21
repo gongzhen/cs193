@@ -25,7 +25,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <inset key="contentEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <inset key="titleEdgeInsets" minX="-70" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="cardfrontsmall">
+                                <state key="normal" backgroundImage="cardbacksmall">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -46,7 +46,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="cardfrontsmall" width="69" height="96"/>
+        <image name="cardbacksmall" width="69" height="96"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
