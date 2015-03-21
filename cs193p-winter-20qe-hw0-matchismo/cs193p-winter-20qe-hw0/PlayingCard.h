@@ -10,17 +10,13 @@
 
 @interface PlayingCard : Card
 
+/* Property */
 @property (strong, nonatomic) NSString *suit;
-
 @property (nonatomic) NSUInteger rank;
 
-- (void) setRank:(NSUInteger)rank;
-
-// Class method: PlayingCard validSuites
-// public method
+// Class method: validSuites
+// + is public method
 + (NSArray *) validSuites;
-
 + (NSUInteger) maxRank;
-
 
 @end

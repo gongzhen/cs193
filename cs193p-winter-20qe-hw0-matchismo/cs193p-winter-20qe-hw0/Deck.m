@@ -13,9 +13,9 @@
 // semi-private property cards known as an anonymous category or class extension.
 // it is only visible within the scope of Deck.m.
 @property (strong, nonatomic) NSMutableArray* cards;
-
 @end
 
+/* Implemetation for Deck */
 @implementation Deck
 
 - (NSMutableArray* ) cards
@@ -33,13 +33,11 @@
         [self.cards insertObject:card atIndex:0];
     } else {
         [self.cards addObject:card ];
-    }
-    
+    }    
 }
 
 - (void) addCard:(Card *)card
 {
-    //
     [self addCard:card atTop:NO];
 }
 
@@ -50,11 +48,8 @@
     
     if ( [self.cards count]) {
         unsigned index = arc4random() % [self.cards count];
-        
         randomCard = self.cards[index];
-        
         [self.cards removeObjectAtIndex: index];
-        
     }
     
     return randomCard;

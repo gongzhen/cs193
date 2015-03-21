@@ -41,11 +41,7 @@
 
 - (IBAction)touchCardButton:(UIButton *)sender
 {
-    NSLog(@"Hello World.\n");
-//    UIImage *cardImage = [UIImage imageNamed:@"jj"];
-    
-    
-    
+   
     if( [sender.currentTitle length]) {
         [sender setBackgroundImage:[UIImage imageNamed:@"cardbacksmall"] forState:UIControlStateNormal];
         

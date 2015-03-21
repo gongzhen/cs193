@@ -5,11 +5,9 @@
 //  Created by gongzhen on 1/18/15.
 //  Copyright (c) 2015 gongzhen. All rights reserved.
 //
-
 #import "PlayingCard.h"
 
 @implementation PlayingCard
-
 
 @synthesize suit = _suit;
 
@@ -55,8 +53,7 @@
 
 + (NSUInteger) maxRank
 {
-    return [[self rankingStrings] count ]-1;
+    return [[self rankingStrings] count ] - 1;
 }
 
- 
 @end

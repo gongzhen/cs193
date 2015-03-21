@@ -30,7 +30,6 @@
         }
     }
     
-    
     // init alawys return itself.
     // return instancetype of itself.
     return self;
