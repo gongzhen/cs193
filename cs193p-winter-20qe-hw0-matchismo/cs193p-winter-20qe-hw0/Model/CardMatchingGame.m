@@ -10,15 +10,16 @@
 
 @interface CardMatchingGame()
 
-// rewrite the score property with readwrite which it is the default.
-// we only use readwrite when we use readonly
+/* Property
+ * define the own property
+ * rewrite the score property with readwrite which it is the default.
+ * we only use readwrite when we use readonly 
+ */
 @property (nonatomic, readwrite) NSInteger score;
 @property (nonatomic, strong) NSMutableArray *cards;
-
 @end
 
 @implementation CardMatchingGame
-
 - (NSMutableArray *) cards
 {
     if (!_cards) {
@@ -35,7 +36,8 @@
         for (int i = 0; i < count; i ++) {
             Card *card = [deck drawRandomCard];
             if (card) {
-                [self.cards[i] addObject:card];
+                // not cards[i]
+                [self.cards addObject:card];
             } else {
                 self = nil;
                 break;
@@ -80,7 +82,7 @@ static const int COST_TO_CHOOSE = 1;
     }
 }
 
--(Card *) cardAtIndex:(NSUInteger)index
+-(Card *) cardAtIndex:(NSUInteger) index
 {
     return (index < [self.cards count]) ? self.cards[index] : nil;
 }
