@@ -17,9 +17,9 @@
     if ([otherCards count] == 1) {
         PlayingCard *otherCard = [otherCards firstObject];
         if ([self.suit isEqualToString:otherCard.suit]) {
-            score = 1;
+            score += 1;
         } else if (self.rank == otherCard.rank) {
-            score = 4;
+            score += 4;
         }
     }
     
@@ -42,7 +42,7 @@
 // void setSuite(NSString suit)
 - (void) setSuit:(NSString *)suit
 {
-    if ([[PlayingCard validSuites ] containsObject: suit] ) {
+    if ([[PlayingCard validSuits ] containsObject: suit] ) {
         _suit = suit;
     }
 }
@@ -61,8 +61,8 @@
 
 // public methods
 
-// NSArray* validSuites() return NSArray;
-+ (NSArray *) validSuites
+// NSArray* validSuits() return NSArray;
++ (NSArray *) validSuits
 {
     return @[@"♠", @"♣", @"♥", @"♦"];
 }
@@ -71,7 +71,8 @@
 + (NSArray *) rankingStrings
 {
     // @ make a string object
-    return @[@"?", @"A", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10", @"J",@"Q",@"K"];
+    return @[@"?", @"A", @"1", @"2", @"3", @"4", @"5", @"6",
+             @"7", @"8", @"9", @"10", @"J",@"Q",@"K"];
 }
 
 // NSUInteger maxRank() return NSUInteger

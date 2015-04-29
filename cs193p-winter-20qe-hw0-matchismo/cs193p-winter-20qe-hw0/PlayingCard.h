@@ -17,7 +17,7 @@
 
 // Class method: validSuites
 // + is public method
-+ (NSArray *) validSuites;
++ (NSArray *) validSuits;
 + (NSUInteger) maxRank;
 
 @end

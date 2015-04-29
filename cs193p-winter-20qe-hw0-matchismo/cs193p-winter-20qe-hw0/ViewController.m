@@ -10,6 +10,11 @@
 #import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
 
+
+// @todo: 
+// flip cards task. the unmatched card needs to be flip back.
+// score counting board shows the current score.
+//
 @interface ViewController ()
 
 /* flipsLabel*/
@@ -19,6 +24,9 @@
 @property (nonatomic) int flipCount;
 @property (nonatomic, strong) Deck *deck;
 @property (nonatomic, strong) CardMatchingGame *game;
+
+/* scorelabel */
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 
 // Outlet collection for many buttons.
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
@@ -80,10 +88,16 @@
     for (UIButton *cardButton in self.cardButtons) {
         NSUInteger cardIndex = [self.cardButtons indexOfObject: cardButton];
         Card *card = [self.game cardAtIndex: cardIndex];
-        [cardButton setTitle: [self titleForCard:card] forState: UIControlStateNormal];
-        [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
+        [cardButton setTitle: [self titleForCard:card]
+                    forState: UIControlStateNormal];
+        [cardButton setBackgroundImage:[self backgroundImageForCard:card]
+                              forState:UIControlStateNormal];
         cardButton.enabled = !card.isMached;
     }
+    
+    self.flipCount++;
+    /* update the score board */
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score: %ld", self.game.score];
     
 }
 

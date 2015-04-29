@@ -138,6 +138,8 @@
 		065A65DD1A73900500F4C3F7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				06178A801A6B6D5C00BC6D63 /* Card.m */,
+				06178A7F1A6B6BF100BC6D63 /* Card.h */,
 				06178A891A6C2CAA00BC6D63 /* PlayingCardDeck.m */,
 				06178A881A6C2C8C00BC6D63 /* PlayingCardDeck.h */,
 				065E271D1AACDBEE00C183A9 /* CardMatchingGame.m */,
@@ -146,8 +148,6 @@
 				06178A851A6BAA5E00BC6D63 /* PlayingCard.h */,
 				06178A831A6B8BDA00BC6D63 /* Deck.m */,
 				06178A821A6B8BA400BC6D63 /* Deck.h */,
-				06178A801A6B6D5C00BC6D63 /* Card.m */,
-				06178A7F1A6B6BF100BC6D63 /* Card.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";

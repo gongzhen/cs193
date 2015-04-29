@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flips: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fJV-sY-WUM">
-                                <rect key="frame" x="39" y="494" width="164" height="21"/>
+                                <rect key="frame" x="26" y="517" width="87" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -187,11 +187,19 @@
                                     <action selector="touchCardButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5Eg-xp-Zsn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="score" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RCF-fb-M1t">
+                                <rect key="frame" x="178" y="511" width="115" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.094860735309999999" green="1" blue="0.24942352039999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <connections>
                         <outlet property="flipsLabel" destination="fJV-sY-WUM" id="IBz-Om-TdN"/>
+                        <outlet property="scoreLabel" destination="RCF-fb-M1t" id="B8m-Y7-u85"/>
                         <outletCollection property="cardButtons" destination="xOV-LW-ngu" id="Hcq-Te-iEq"/>
                         <outletCollection property="cardButtons" destination="8dm-yd-1Eu" id="3kN-9M-Eiz"/>
                         <outletCollection property="cardButtons" destination="1YS-fV-rsh" id="9t9-s8-pc8"/>
